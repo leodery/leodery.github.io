@@ -676,63 +676,152 @@ const DATA = {
         }
       ],
       "flow": []
+    },
+    {
+      "slug": "math-mistake-workbench",
+      "title": {
+        "zh": "高中 AI 错题诊断工作台",
+        "en": "AI Maths Mistake Review Workbench"
+      },
+      "year": "2026",
+      "type": {
+        "zh": "独立开发",
+        "en": "Independent development"
+      },
+      "summary": {
+        "zh": "从试卷里切题、预览、入库，再用 AI 辅助分析错因。请家长试用时，我发现只发题目，判断不了学生错在哪一步。",
+        "en": "Extract, preview and save questions from exam papers, then use AI to help review mistakes. A parent trial showed me that seeing only the question wasn't enough to tell where a student went wrong."
+      },
+      "stat": {
+        "zh": "支持试卷切题、预览入库与按批次撤销。",
+        "en": "Supports question extraction, preview before import and batch rollback."
+      },
+      "stack": [
+        {
+          "zh": "Python",
+          "en": "Python"
+        },
+        {
+          "zh": "SQLite",
+          "en": "SQLite"
+        },
+        {
+          "zh": "原生 JavaScript",
+          "en": "Vanilla JavaScript"
+        }
+      ],
+      "bg": {
+        "zh": "学生整理错题后，还要判断错因并找到适合重练的题。",
+        "en": "After collecting missed questions, learners need to understand the cause and find relevant practice."
+      },
+      "solution": {
+        "zh": "用 Python、SQLite 和原生 JavaScript 实现试卷切题和预览确认；确认后入库，支持按批次撤销。",
+        "en": "Python, SQLite and vanilla JavaScript handle extracting questions, reviewing them before import and rolling back batches."
+      },
+      "result": {
+        "zh": "曾在小红书招募家长试用。收到的题目缺少学生解题步骤，单看题目无法判断错因。",
+        "en": "I recruited parents on Xiaohongshu to try the tool. A submitted question lacked the student's working, which made it impossible to diagnose the specific mistake."
+      },
+      "repo": null,
+      "info": [
+        {
+          "k": {
+            "zh": "我的角色",
+            "en": "My role"
+          },
+          "v": {
+            "zh": "独立开发",
+            "en": "Independent development"
+          }
+        }
+      ],
+      "scenes": [
+        {
+          "zh": "错题整理",
+          "en": "Collect mistakes"
+        },
+        {
+          "zh": "错因诊断",
+          "en": "Analyse mistakes"
+        },
+        {
+          "zh": "同类题训练",
+          "en": "Practise similar questions"
+        }
+      ],
+      "flow": []
+    },
+    {
+      "slug": "wechat-summary",
+      "title": {
+        "zh": "个人微信聊天记录总结器",
+        "en": "WeChat Conversation Summaries"
+      },
+      "year": "2026",
+      "type": {
+        "zh": "独立开发",
+        "en": "Independent development"
+      },
+      "status": {
+        "zh": "自用工具",
+        "en": "Personal tool"
+      },
+      "summary": {
+        "zh": "想回看微信群里聊过什么，不用再挨个翻群。我把讨论要点整理成了一个网页，供自己查阅。",
+        "en": "I collected discussion highlights on one private page so I could catch up without scrolling through each WeChat group."
+      },
+      "stat": {
+        "zh": "用于个人回顾群聊信息。",
+        "en": "Used for private review of group discussions."
+      },
+      "stack": [
+        {
+          "zh": "大模型摘要",
+          "en": "LLM summarisation"
+        },
+        {
+          "zh": "网页汇集",
+          "en": "Web view"
+        }
+      ],
+      "bg": {
+        "zh": "活跃群聊里的重要消息容易被后续讨论淹没。",
+        "en": "Key points in active group chats are easily buried by newer messages."
+      },
+      "solution": {
+        "zh": "用大模型提炼讨论要点，再把摘要汇集到同一网页。",
+        "en": "A language model extracts discussion highlights for display in a single web view."
+      },
+      "result": {
+        "zh": "用于个人回顾群聊信息。",
+        "en": "Used for private review of group discussions."
+      },
+      "repo": null,
+      "info": [
+        {
+          "k": {
+            "zh": "我的角色",
+            "en": "My role"
+          },
+          "v": {
+            "zh": "独立开发",
+            "en": "Independent development"
+          }
+        }
+      ],
+      "scenes": [
+        {
+          "zh": "回顾群聊讨论",
+          "en": "Review group discussions"
+        },
+        {
+          "zh": "集中阅读摘要",
+          "en": "Read summaries in one place"
+        }
+      ],
+      "flow": []
     }
   ],
-  "ai": {
-    "capability": {
-      "g": {
-        "zh": "全栈原型开发",
-        "en": "Full-stack prototyping"
-      },
-      "hint": {
-        "zh": "高中错题工作台的前端、服务端和数据库由我接起来。前端用原生 JavaScript，后端用 Python，SQLite 存题目和导入批次。",
-        "en": "I connected the workbench's frontend, backend and database: vanilla JavaScript for the interface, Python on the server, and SQLite for questions and import batches."
-      },
-      "tags": [
-        {
-          "zh": "前端交互",
-          "en": "Frontend interaction"
-        },
-        {
-          "zh": "Python 服务端",
-          "en": "Python backend"
-        },
-        {
-          "zh": "SQLite 数据持久化",
-          "en": "SQLite persistence"
-        }
-      ]
-    },
-    "cert": {
-      "g": {
-        "zh": "AI 相关认证",
-        "en": "AI certification"
-      },
-      "hint": {
-        "zh": "已达摩院 AI 训练师初级与高级双认证。",
-        "en": "Certified at both junior and senior level as a DAMO AI Trainer."
-      },
-      "tags": [
-        {
-          "zh": "达摩院 AI 训练师 · 初级",
-          "en": "DAMO AI Trainer · Junior"
-        },
-        {
-          "zh": "达摩院 AI 训练师 · 高级",
-          "en": "DAMO AI Trainer · Senior"
-        },
-        {
-          "zh": "2026 年取得",
-          "en": "Obtained 2026"
-        }
-      ]
-    },
-    "labProjects": [
-      "bohack-workflow",
-      "leo-learning-os"
-    ],
-    "building": []
-  },
   "experience": {
     "public": [
       {
@@ -934,8 +1023,8 @@ const DATA = {
    2. 界面文案（中 / 英）
    ========================================================= */
 const UI = {
-  zh:{nav:["首页","作品","实践经历","教育与证书","AI 项目","技能"],
-      navHash:["#/","#/projects","#/experience","#/education","#/ai","#/skills"],
+  zh:{nav:["首页","作品","实践经历","教育与证书","技能"],
+      navHash:["#/","#/projects","#/experience","#/education","#/skills"],
       heroKick:"经济学 × 人工智能 × 数据分析 × 社会创新",
       ctaProj:"查看项目作品",ctaAbout:"关于我 / 简历",ctaContact:"发邮件给我",
       copyHint:"点击复制",copied:"已复制到剪贴板",copyFail:"复制失败，请手动长按选择",
@@ -944,8 +1033,6 @@ const UI = {
 
       projKick:"Module 02 · Work",projTitle:"作品",projDesc:"",
       cvLink:"旧版简历（另一个版本）",
-      aiKick:"Module 01 · Lab",aiTitle:"AI 项目",aiDesc:"",
-      aiProjTitle:"项目案例",
       expKick:"Module 03 · Practice",expTitle:"实践经历",expDesc:"南开社团、学生工作与旧书义卖。",
       expPublic:"公益实践",expCampus:"校园经历",expIntern:"实习经历",expEmpty:"暂无经历。",
       skKick:"Module 04 · Knowledge",skTitle:"我做过的工作",skDesc:"",
@@ -960,8 +1047,8 @@ const UI = {
 
       notFound:"页面不存在",goHome:"回到首页",
       level:{}},
-  en:{nav:["Home","Projects","Experience","Education","AI Projects","Skills"],
-      navHash:["#/","#/projects","#/experience","#/education","#/ai","#/skills"],
+  en:{nav:["Home","Projects","Experience","Education","Skills"],
+      navHash:["#/","#/projects","#/experience","#/education","#/skills"],
       heroKick:"Economics × AI × Data Analysis × Social Innovation",
       ctaProj:"View projects",ctaAbout:"About / CV",ctaContact:"Email me",
       copyHint:"Click to copy",copied:"Copied to clipboard",copyFail:"Copy failed — select the text manually",
@@ -970,8 +1057,6 @@ const UI = {
 
       projKick:"Module 02 · Work",projTitle:"Projects",projDesc:"",
       cvLink:"Older CV version",
-      aiKick:"Module 01 · Lab",aiTitle:"AI Projects",aiDesc:"",
-      aiProjTitle:"Project case studies",
       expKick:"Module 03 · Practice",expTitle:"Experience",expDesc:"Student societies, campus roles and a charity book sale.",
       expPublic:"Public service",expCampus:"Campus",expIntern:"Internship",expEmpty:"No entries yet.",
       skKick:"Module 04 · Knowledge",skTitle:"My work in practice",skDesc:"",
@@ -1118,16 +1203,7 @@ function pageHome(){
     </div>
   </section>
 
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      ${secHead(t.aiKick,t.aiTitle,t.aiDesc)}
-      <div class="grid g2" style="margin-bottom:26px">
-        ${skillCard(DATA.ai.capability,0)}
-        ${skillCard(DATA.ai.cert,1)}
-      </div>
-      <div class="btns" style="margin-top:22px"><a class="btn" href="#/ai">${t.more} · ${t.aiTitle}</a></div>
-    </div>
-  </section>
+
 
   <section class="sec">
     <div class="wrap">
@@ -1190,24 +1266,6 @@ function pageProject(slug){
     <div class="case reveal" style="border-bottom:0">
       <a class="back" href="#/projects/${next.slug}">${t.viewCase} → ${L(next.title)}</a>
     </div>
-  </div></section>`;
-}
-
-function pageAI(){
-  const t=T();
-  const lab=DATA.ai.labProjects.map(s=>DATA.projects.find(p=>p.slug===s)).filter(Boolean);
-  return `<section class="sec"><div class="wrap">
-    ${secHead(t.aiKick,t.aiTitle,t.aiDesc)}
-    <div class="grid g2" style="margin-bottom:40px">
-      ${skillCard(DATA.ai.capability,0)}
-      ${skillCard(DATA.ai.cert,1)}
-    </div>
-
-    <div class="sec-head reveal" style="margin-bottom:24px">
-      <h2 style="font-size:24px">${t.aiProjTitle}</h2>
-    </div>
-    <div class="grid g2">${lab.map(projectCard).join("")}</div>
-
   </div></section>`;
 }
 
@@ -1303,11 +1361,11 @@ function route(){
   const h=location.hash||"#/";
   const parts=h.replace(/^#\/?/,"").split("/").filter(Boolean);
   const key=parts[0]||"";
+  if(key==="ai"){ location.replace("#/projects"); return; }
   let html="";
   const active=T().navHash.indexOf(key ? "#/"+key : "#/");
   if(!key){ html=pageHome(); }
   else if(key==="projects"){ html=parts[1]?pageProject(parts[1]):pageProjects(); }
-  else if(key==="ai"){ html=pageAI(); }
   else if(key==="experience"){ html=pageExperience(); }
   else if(key==="skills"){ html=pageSkills(); }
   else if(key==="education"){ html=pageEducation(); }
